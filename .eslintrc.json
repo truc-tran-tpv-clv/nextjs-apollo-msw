@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["testing-library", "@typescript-eslint/eslint-plugin"],
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ],
+  "rules": {
+    "import/no-anonymous-default-export": "off",
+    "react/display-name": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/no-var-requires": "off"
+  }
+}

@@ -1,0 +1,40 @@
+type Mutation {
+  registerUser(registerRequest: RegisterRequest!): RegisterResponse!
+  login(signinRequest: SigninRequest!): SigninResponse!
+}
+
+type Query {
+  user: User!
+  me: User!
+}
+
+type User {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+
+input RegisterRequest {
+  firstName: String!
+  lastName: String!
+  email: String!
+  password: String!
+}
+
+type RegisterResponse {
+  id: Int!
+}
+
+input SigninRequest {
+  email: String!
+  password: String!
+}
+
+type SigninResponse {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  email: String!
+  accessToken: String!
+}

@@ -1,0 +1,29 @@
+:root {
+  --color-primary: #30e663;
+  --color-gray: #aaa;
+}
+
+.ant-form-item {
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-gray {
+  color: var(--color-gray);
+}
+
+.h-screen {
+  min-height: 100vh;
+}
+
+nextjs-portal {
+  display: none;
+}

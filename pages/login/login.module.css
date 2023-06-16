@@ -1,0 +1,28 @@
+.login-page {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo:global(.ant-typography) {
+  color: var(--color-primary);
+}
+
+.form {
+  max-width: 30rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: rgb(20, 20, 20);
+}
+
+.link {
+  color: white;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #bbb;
+}

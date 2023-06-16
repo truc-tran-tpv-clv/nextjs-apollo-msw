@@ -1,0 +1,30 @@
+.home-page {
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.menu {
+  padding: 1rem 2rem;
+}
+
+.sort {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.search-bar {
+  width: max-content;
+  min-width: 400px;
+}
+
+.countdown:global(.ant-statistic .ant-statistic-content) {
+  font-size: 0.875rem;
+}
