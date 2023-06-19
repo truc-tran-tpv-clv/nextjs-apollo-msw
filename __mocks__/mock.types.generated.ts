@@ -94,7 +94,7 @@ export type MeQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type MeQuery = { __typename?: 'Query', me: { __typename?: 'User', id: number, firstName: string, lastName: string, email: string } };
 
-const test = graphql.link('http://localhost:9998/graphql')
+const test = graphql.link('http://localhost:9090/graphql')
 
 /**
  * @param resolver a function that accepts a captured request and may return a mocked response.

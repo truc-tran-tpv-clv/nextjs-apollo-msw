@@ -1,0 +1,5 @@
+{
+  "watch": ["./__mocks__/**/*"],
+  "ext": "ts",
+  "exec": "ts-node --esm server.local.ts"
+}

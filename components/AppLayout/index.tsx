@@ -15,7 +15,7 @@ import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/router";
 import { AppError } from "../AppError";
 import { useQuery } from "@apollo/client";
-import { MeDocument } from "@/api/client/schema.generated";
+import { MeDocument } from "@/api/client/client.generated";
 
 const { Content, Header } = Layout;
 
